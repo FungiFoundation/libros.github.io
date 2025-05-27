@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envíos desde Chile - Fundación Fungi</title>
+    <style>
+        :root {
+            --dark: #12090a;
+            --light: #f0e6d3;
+            --purple: #9658a6;
+            --green: #5b6151;
+            --paragraph--light: #dad0bf;
+            --outline--green: #7a836c;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: var(--dark);
+            font-family: 'IBM Plex Serif', serif;
+            color: var(--paragraph--light);
+            line-height: 1.6;
+            padding: 40px 20px; /* Increased padding for cleaner layout */
+        }
+        h2 {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--light);
+            text-align: center;
+        }
+        img {
+            width: 60%; /* Reduced to 60% of container width */
+            max-width: 300px; /* Smaller max width to match landing page */
+            height: auto;
+            margin: 20px auto; /* Centered with margin */
+            border-radius: 8px;
+            border: 1px solid var(--outline--green);
+            display: block; /* Ensures centering */
+        }
+        .option {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--outline--green);
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 700px;
+            width: 100%;
+            margin: 20px auto; /* Centered with margin */
+        }
+        .bilingual {
+            margin-bottom: 15px;
+        }
+        .bilingual strong {
+            color: var(--light);
+        }
+        .spanish {
+            color: var(--green);
+        }
+        .form-placeholder {
+            text-align: center;
+            font-size: 1.2em;
+            color: var(--purple);
+            margin: 20px 0;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto; /* Centered with margin */
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: 1px solid var(--outline--green);
+            border-radius: 5px;
+            background-color: var(--light);
+        }
+        @media (max-width: 600px) {
+            h2 {
+                font-size: 1.5em; /* Smaller title on mobile */
+            }
+            img {
+                max-width: 200px; /* Smaller image on mobile */
+            }
+            iframe {
+                height: 450px; /* Slightly smaller form on mobile */
+            }
+            .option {
+                padding: 15px; /* Reduced padding on mobile */
+            }
+        }
+        .note {
+            text-align: center;
+            font-size: 0.95em;
+            color: var(--paragraph--light);
+            max-width: 700px;
+            margin: 20px auto; /* Centered with margin */
+        }
+    </style>
+</head>
+<body>
+    <h2>Envíos desde Chile</h2>
+    <img src="https://assets.ffungi.org/FieldGuides.jpg" alt="Volúmenes 1 y 2">
+    <div class="form-placeholder">
+        Completa el formulario abajo para iniciar tu pedido
+    </div>
+    <div class="form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf-hAAEtJ8Ip2lOAkb4xm-sJb2O1vkITuJfex4yG8ZkrUXNeA/viewform?embedded=true" frameborder="0">Cargando…</iframe>
+    </div>
+        <div class="option">
+        <p class="bilingual">
+            <strong>Envío:</strong> <span class="spanish">Gestionado por el equipo de la Fundación Fungi. Los costos son tu responsabilidad y varían según ubicación y peso (3,000–12,000 CLP).</span>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Tus Guías - Volúmenes 1 y 2</title>
+    <style>
+        :root {
+            --dark: #12090a;
+            --light: #f0e6d3;
+            --purple: #9658a6;
+            --green: #5b6151;
+            --paragraph--light: #dad0bf;
+            --outline--green: #7a836c;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: var(--dark);
+            font-family: 'IBM Plex Serif', serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Changed to min-height for flexibility */
+            color: var(--paragraph--light);
+            line-height: 1.4; /* Slightly tighter line height for compactness */
+        }
+        h1 {
+            font-size: 2em; /* Reduced to fit without scrolling */
+            font-weight: 700;
+            margin: 10px 0 5px; /* Smaller margins for compactness */
+            color: var(--light);
+            text-align: center;
+        }
+        .bilingual {
+            margin: 5px 0 10px; /* Smaller margins */
+            text-align: center;
+            font-size: 0.9em; /* Slightly smaller text for fit */
+        }
+        .english {
+            font-style: italic;
+            color: var(--paragraph--light);
+        }
+        .spanish {
+            color: var(--green);
+        }
+        button {
+            padding: 12px 25px; /* Slightly smaller buttons */
+            margin: 5px;
+            background-color: var(--purple);
+            color: var(--light);
+            border: 2px solid var(--outline--green);
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em; /* Reduced font size for buttons */
+            font-family: 'IBM Plex Serif', serif;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: var(--green);
+            transform: translateY(-2px);
+        }
+        .low-stock {
+            color: #e74c3c;
+            font-weight: bold;
+            margin-top: 10px; /* Smaller margin */
+            font-size: 0.9em; /* Smaller text for fit */
+            text-align: center;
+        }
+        img {
+            width: 60%; /* Reduced to 60% of container width */
+            max-width: 300px; /* Smaller max width to fit */
+            height: auto;
+            margin: 10px 0; /* Smaller margin */
+            border-radius: 8px; /* Slightly smaller radius */
+            border: 1px solid var(--outline--green);
+        }
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em; /* Even smaller on mobile */
+            }
+            .bilingual, .low-stock {
+                font-size: 0.8em; /* Smaller text on mobile */
+            }
+            button {
+                padding: 10px 20px; /* Smaller buttons on mobile */
+                font-size: 0.9em;
+            }
+            img {
+                max-width: 200px; /* Even smaller image on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Get Your Guides: Volume 1 & Volume 2<br>Compra Tus Guías: Volúmenes 1 y 2</h1>
+    <p class="bilingual">
+        <span class="english">Choose your location to start shopping:</span><br>
+        <span class="spanish">Elige tu ubicación para comenzar a comprar:</span>
+    </p>
+    <img src="https://assets.ffungi.org/FieldGuides.jpg" alt="Volúmenes 1 y 2">
+    <div>
+        <button onclick="location.href='chile-order.html'">I’m in Chile<br>Estoy en Chile</button>
+        <button onclick="window.location.href='https://www.buscalibre.cl/libro-guia-de-campo-hongos-de-chile/9789569284021/p/51677324?srsltid=AfmBOoqcuopm_nkRKVX8-m8OqPEK4wVIsOLU_8Syp1pYpgY8S4ACbXrS';"> I’m International<br>Soy Internacional </button>
+    </div>
+</body>
+</html>
